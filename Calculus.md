@@ -72,6 +72,7 @@ $$\begin{aligned}
 **6A.** What is the sign of $\frac{dy}{dx}$ for $x < 1$ and then for $x > 1$?
 **6B.** What is the instant slope at $x = 1$?
 
+before x=1, that is when x<1, y increases, the slope is positive. at x=1, the slope is 0. and when the x>1, slope is negative. 
 
 **7**  **If $y = \sin x$,** write an expression for $\frac{\Delta y}{\Delta x}$ at any point $x$.
 **We see later that this $\frac{\Delta y}{\Delta x}$ approaches $\cos x$**
