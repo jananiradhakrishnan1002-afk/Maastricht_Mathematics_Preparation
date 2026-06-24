@@ -10,7 +10,12 @@ Slope at one point: also known as instant slope: is the derivative of the funcct
 
 $$ \frac{dy}{dx}$$
 ***Practice problems from Prof. Gilbert Strang's Lecture - Big Picture Derivatives***
-![508](Attachments/Pasted%20image%2020260623113942.png)
+1. For $y = 2x^3$, what is the average slope = $\frac{\Delta y}{\Delta x}$ from $x = 1$ to $x = 2$?
+2. What is the instant slope of $y = 2x^3$ at $x = 1$?
+3. $y = x^n$ has $\frac{dy}{dx} = nx^{n-1}$. What is $\frac{dy}{dx}$ when $y(x) = \frac{1}{x} = x^{-1}$?
+4. For $y = x^{-1}$, what is the average slope $\frac{\Delta y}{\Delta x}$ from $x = \frac{1}{2}$ to $x = 1$?
+5. What is the instant slope of $y = x^{-1}$ at $x = \frac{1}{2}$?
+
 
 Q1,2
 
@@ -63,19 +68,18 @@ $$\begin{aligned}
 \frac{d}{dx}x^{-1}=-1x^{-2}=\frac{-1}{x^{2}}\\
 \text{at } x=\frac{1}{2}\\\text{ the slope is } \frac{-1}{(\frac{1}{2})^{2}}=\frac{-1}{0.25}=-4 
 \end{aligned}$$
-Q6 (A,B)![](Attachments/Pasted%20image%2020260624104834.png)
-the slope is positive for all points before x<1 and the slope is negative for all the points after x>1. 
+**Q6 Suppose the graph of $y(x)$ climbs up to its maximum at $x = 1$. Then it goes downward for $x > 1$**. 
+**6A.** What is the sign of $\frac{dy}{dx}$ for $x < 1$ and then for $x > 1$?
+**6B.** What is the instant slope at $x = 1$?
 
-At the peak( maximum point) Slope is 0 
 
-q7.
-![](Attachments/Pasted%20image%2020260624105333.png)
+**7**  **If $y = \sin x$,** write an expression for $\frac{\Delta y}{\Delta x}$ at any point $x$.
+**We see later that this $\frac{\Delta y}{\Delta x}$ approaches $\cos x$**
 
-Difference quotient = change in y / change in x
 
-Slop of sin function : 
-let change in function 
+
+
 
 
 ***Practice problems from Prof. Gilbert Strang's Lecture - Max and Min***
-![](Attachments/Pasted%20image%2020260624105655.png)
+
