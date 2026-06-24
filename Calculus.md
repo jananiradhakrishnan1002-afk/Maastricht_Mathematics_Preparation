@@ -77,10 +77,77 @@ before x=1, that is when x<1, y increases, the slope is positive. at x=1, the sl
 **7**  **If $y = \sin x$,** write an expression for $\frac{\Delta y}{\Delta x}$ at any point $x$.
 **We see later that this $\frac{\Delta y}{\Delta x}$ approaches $\cos x$**
 
+we need two points to calculate slope, but if the point is extremely close to the initial point such that the difference between the two points is almost 0, then such slope is called a derivative
+ 
+ in case of sin(x) let x be the first point and x+h be the second point such that h ->0
+in that case f(x) = sin (x) and f(x+h)= sin(x+h)
+
+Change in y : sin(x+h)-sin(x)
+change in x: x+h - x = h 
+slope:    $$
+\frac{sin(x+h)-sin(x)}{h}\\
+$$
 
 
 
+**Practice problems from Prof. Gilbert Strang's Lecture - Max and Min and Second Derivative**
+
+**1  Which $x^*$ gives the minimum of $y(x) = x^2 + 2x$? Solve $\dfrac{dy}{dx} = 0$**
+minimum of the parabola is at its vertex.
+the vertex can be given by x = -b/2a
+=$$\frac{-2}{2} = -1$$
+therefore, the minimum point of y(x) is at x = -1. 
+$$\begin{aligned}\\
+y(x)'= 2x+2\\\
+2x+2 = 0\\
+2x= -2
+x= -2/2 = -1
+\end{aligned}$$
 
 
-***Practice problems from Prof. Gilbert Strang's Lecture - Max and Min***
+
+**3 Find the maximum height of $y(x) = 2 + 6x - x^2$. Solve $\dfrac{dy}{dx} = 0$.**
+the equation can be re written as:  $$y(x)= -x^{2}+6x+2$$
+now we know its a down open parabola , the maximum point is 
+$$\begin{aligned}
+\frac{-b}{2a}= \frac{-6}{2*(-1)}=\frac{-6}{-2}=3\\
+\end{aligned}$$
+$$\begin{aligned}
+y(x)'=-2x+6\\
+at -2x+6=0,  x=\frac{0-6}{-2} = 3
+\end{aligned}$$
+**4 Find $\dfrac{d^2y}{dx^2}$ to show that this parabola bends down.**
+the second derivative is :
+$$\begin{aligned}
+y(x)'=-2x+6\\
+y(x)''=-2\\
+\dfrac{d^2y}{dx^2}<0\\
+ \text{ =>hence, its a down open parabola}
+\end{aligned}$$
+
+
+
+**5  For $y(x) = x^4 - 2x^2$ show that $\dfrac{dy}{dx} = 0$ at $x = -1, 0, 1$. Find $y(-1), y(0), y(-1)$.**
+
+when $\dfrac{dy}{dx} = 0$ , the slope is 0 , and those are the peaks (max and min) of the function's graph
+to find those points ( max and min), we can do so by differentiating the function, factorizing it by  setting it to 0. 
+
+$$\begin{aligned}
+y(x) =x^{4} - 2x^{2}\\
+y(x)' = 4x^{3}-4x\\
+\text{at } 4x^{3}-4x=0\\
+4x(x^2-1)=0]\\
+4x= 0 x=0 ----->(1)\\
+(x^2-1)= (x+1)(x-1)\\
+(x+1)=0, x=-1\\ 
+(X-1)=0, x=1\\
+therefore, dy/dx =0 \text{ at x = -1,0,1}
+\end{aligned}$$ 
+6 Now $\dfrac{dy}{dx} = 4x^3 - 4x$. What is the second derivative $\dfrac{d^2y}{dx^2}$? 
+$$\dfrac{d^2y}{dx^2}= 12x^2-4$$
+**7 At a minimum point explain why $\dfrac{dy}{dx} = 0$ and $\dfrac{d^2y}{dx^2} > 0$.**
+At minimum point the point is neither decreasing , nor increasing. So, its horizontal without any upward or downward movement. therefore dy/dx (the slope) is 0.
+
+Likewise, the second derivative tells us how the slope is changing, if its positive, the slope is changing in an upward/positive direction otherwise in a downward direction 
+
 
