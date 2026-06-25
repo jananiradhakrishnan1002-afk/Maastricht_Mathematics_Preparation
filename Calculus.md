@@ -151,3 +151,66 @@ At minimum point the point is neither decreasing , nor increasing. So, its horiz
 Likewise, the second derivative tells us how the slope is changing, if its positive, the slope is changing in an upward/positive direction otherwise in a downward direction 
 
 
+**Practice problems from Prof. Gilbert Strang's Lecture - Exponential Functions**
+**1 What is the derivative of $\dfrac{x^{10}}{10!}$? = $\frac{x^{10}}{1}.\frac{1}{10!}$**
+derivative: $$10x^{9}.\frac{1}{10!}+x^{10}.0=\frac{10x^{9}}{10!}=\frac{x^9}{9!}$$
+
+**3 Why is $\dfrac{1}{e^x}$ the same as $e^{-x}$?**
+
+exponential property recalled: $$x^a.x^b=x^{a+b}$$$$\begin{aligned}
+e^a.e^b=e^{a+b}\\
+\text{for }e^{-x}.e^{x}=e^{-x+x}=e^0 = 1\\
+\text{so } e^{-x}e^{x}=1\\
+e^{-x}=\frac{1}{e^x}
+\end{aligned}$$
+
+
+**4 Why is $e^{-1} = 1 - 1 + \dfrac{1}{2} - \dfrac{1}{6} + \cdots$ between $\dfrac{1}{3}$ and $\dfrac{1}{2}$? Then $2 < e < 3$.**
+
+We know, $e^x = 1 + x + \dfrac{1}{2}x^2 + \dfrac{1}{6}x^3 + \cdots$
+
+when we substitute x = 1 
+$e^1 = 1 + 1 + \dfrac{1}{2}1^2 + \dfrac{1}{6}1^3 + \cdots$
+$e^1 = 1 + 1 + \dfrac{1}{2}+\dfrac{1}{6}+\cdots = 2.71828... (e)$ - is between 2 and 3 
+
+Since $e = 1 + 1 + \frac{1}{2} + \frac{1}{6} + \cdots = 2.718\ldots$, 
+we have $2 < e < 3$.
+
+Then, $e^{-x} = \dfrac{1}{e^x} = \dfrac{1}{1 + x + \dfrac{1}{2}x^2 + \dfrac{1}{6}x^3 + \cdots}$ Taking reciprocals and flipping the inequalities, $$\frac{1}{3} < \frac{1}{e} < \frac{1}{2} \text{ as we can see below}$$
+$e^{-1} = \dfrac{1}{e^1} = \dfrac{1}{1 + 1 + \dfrac{1}{2}(1)^2 + \dfrac{1}{6}(1)^3 + \cdots}= \dfrac{1}{2.718...}\text{is in between}\dfrac{1}{3} and \dfrac{1}{2}$
+
+
+**5 Can you solve $\dfrac{dy}{dx} = y$ starting from $y = 3$ at $x = 0$?**
+
+we know, that $$\begin{aligned}
+\frac{dy}{dx}e^x =e^x\\
+\text{if }\frac{d}{dx}y = y, \text{ then y must be equal to }e^x\\
+\text{so the function is } y = e^x\\ 
+\text{when }x = 0, y=e^0= 1\\
+y = 3 \text{ when } y =3e^0    
+\end{aligned}$$
+given $$\frac{dy}{dx}=y=> \frac{dy}{y}=dx$$ 
+
+
+
+**Why is $y = 3e^x$ the right answer?**
+Because, the  natural exponent is the only function which is the derivative of itself. hence y= e^x
+
+
+**6 Can you solve $\dfrac{dy}{dx} = 5y$ starting from $y = 1$ at $x = 0$?** **Why is $y = e^{5x}$ the right answer?**
+
+here y = e^5x
+for function $$e^{5x} \text{ using chain rule}, \frac{d}{dx}e^{5x}= e^{5x}*5= 5e^{5x} $$
+**7 Why does $\dfrac{e^{\Delta x} - 1}{\Delta x}$ approach $1$ as $\Delta x$ gets smaller?**
+
+using the difference quotient / Slope formula  
+$$\text{here } {\Delta x} = h$$
+$$\frac{dy}{dx}e^x = \frac{e^{x+h}-e^x}{h}$$
+at x= 0 and h approaching 0, we can re write the above as:
+$$\frac{dy}{dx}e^0 = \frac{e^{0+h}-e^0}{h}= \frac{e^{h}-1}{h}$$
+now as h approaches 0 , 
+$$\frac{dy}{dx}e^0 \text{ approaches }1$$
+
+
+
+**Practice problems from Prof. Gilbert Strang's Lecture - Big Picture: Integrals**
