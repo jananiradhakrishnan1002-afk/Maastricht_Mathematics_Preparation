@@ -214,3 +214,31 @@ $$\frac{dy}{dx}e^0 \text{ approaches }1$$
 
 
 **Practice problems from Prof. Gilbert Strang's Lecture - Big Picture: Integrals**
+1 What functions $y(t)$ have the constant derivative $s(t) = 7$?
+$$\text{anti derivative of  } s(t) = 7 =y(t) = 7t+C$$
+2 What is the area from $0$ to $t$ under the graph of $s(t) = 7$?
+$$\displaystyle\int_0^t 7 \ dt = \displaystyle\int_0^t 7x$$
+
+
+3 From $t = 0$ to $2$, find the integral $\displaystyle\int_0^2 7 \, dt =$
+antiderivative = 7t 
+from t = 0 to 2, = 7(2)-7(0)= 14-0 = 14
+
+4 What function $y(t)$ has the derivative $s(t) = 7 + 6t$?
+$$\text{antiderivative of }s(t) = 7t + \frac{6t^2}{2}=7t+3t^2 $$
+5 From $t = 0$ to $2$, find area $=$ integral $\displaystyle\int_0^2 (7 + 6t) \, dt$.
+$\displaystyle\int_0^2 (7 + 6t) \, dt$ = $$\displaystyle\int_0^2 7t+3t^2 = (7(2)+3(2)^2 )-(7(0)+3(0)^2)=14+12 -0 = 26$$
+6 At this instant $t = 2$, what is $\dfrac{d(\text{area})}{dt}$?
+the area function is 7t+3t^2, the derivative is s(t) itself which is 7+6t 
+at t=2 , its 7+6(2)= 7+12 = 19
+
+7 & 8
+ From $0$ to $t$, the area under the curve $s = e^t$ IS NOT $y = e^t$. If $t$ is small, the area must be small. But $t = 0$ has $y = e^0 = 1$. From $0$ to $t$, the correct area under $s = e^t$ is $y = e^t - 1$. The slope $\dfrac{dy}{dt}$ is \_\_\_\_\_ and now $y(0) = ?$ 
+
+$$\begin{aligned}
+\frac{dy}{dt}=e^t\\
+y(0)=1-1 = 0
+\end{aligned}$$
+9 Notice $y_0$ in $(y_1 - y_0) + (y_2 - y_1) + (y_3 - y_2) =-y_0+y_3$  The sum of $\Delta y = \dfrac{\Delta y}{\Delta t} \Delta t$ becomes the integral of $\dfrac{dy}{dt} \, dt$ The area under $s(t)$ from $0$ to $t$ becomes $y(t) - y(0)$.
+
+**Practice problems from Prof. Gilbert Strang's Lecture - Derivative of sin x and cos x**
