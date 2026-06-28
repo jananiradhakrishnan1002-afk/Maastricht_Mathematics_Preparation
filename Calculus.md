@@ -241,7 +241,6 @@ y(0)=1-1 = 0
 \end{aligned}$$
 9 Notice $y_0$ in $(y_1 - y_0) + (y_2 - y_1) + (y_3 - y_2) =-y_0+y_3$  The sum of $\Delta y = \dfrac{\Delta y}{\Delta t} \Delta t$ becomes the integral of $\dfrac{dy}{dt} \, dt$ The area under $s(t)$ from $0$ to $t$ becomes $y(t) - y(0)$.
 
-**Practice problems from Prof. Gilbert Strang's Lecture - Derivative of sin x and cos x**
 
 **18.01SC - Single Variable Calculus - Prof. David Jerison https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/**
  
@@ -373,9 +372,9 @@ $\dfrac{d}{dx}|x|$= $\begin{cases} 1, & x >0 \\ -1, & x<0 \end{cases}$
 $(f(x))^2= \begin{cases} 1, & x >0 \\ 1, & x<0 \end{cases}$
 the function f(x)=1 at x =0 removes discontinuity
 
+Piecewise differentiability
 
 **1D-5** Define $f(x) = \begin{cases} ax + b, & x \geq 1 \\ x^2, & x < 1 \end{cases}$
-
 
 a) Find all values of $a, b$ such that $f(x)$ is continuous.
 
@@ -386,4 +385,98 @@ b) Find all values of $a, b$ such that $f'(x)$ is continuous. (Be careful!)
 **1D-6** For each of the following functions, find all values of the constants $a$ and $b$ for which the function is differentiable.
 
 a) $f(x) = \begin{cases} x^2 + 4x + 1, & x \geq 0 \\ ax + b, & x < 0 \end{cases}$
-$\qquad$ b) $f(x) = \begin{cases} x^2 + 4x + 1, & x \geq 1 \\ ax + b, & x < 1 \end{cases}$
+
+for a function to be differentiable, the left and right limits should match and the function must be continuous.
+$f(x) = \begin{cases} x^2 + 4x + 1, & x \geq 0 \\ ax + b, & x < 0 \end{cases}$
+the boundary point is at 0
+so at lim ->0, 
+1=b
+the slopes of both the functions should match at x = 0
+$f'(x) = \begin{cases} 2x + 4, & x \geq 0 \\ a, & x < 0 \end{cases}$
+at x = 0, a=4 
+hence , the function is continuous and differentiable at a=4 and  b=1
+
+**1E-3** Find the points $(x, y)$ of the graph $y = x^3 + x^2 - x + 2$ at which the slope of the tangent line is horizontal. 
+the slope is horizontal when its 0 (i.e.) when there is no elevation.
+$\text{the slope is } y'=3x^2+2x-1$ 
+$\text{setting it at }0  -->  3x^2+2x-1=0$
+$$3x^2-3x+x-1$$
+$$3x(x-1)+1(x-1)=0$$
+$$(3x+1)(x-1)=0$$
+$$x=\frac{-1}{3} \text{ or } 1$$
+**1H-3** Solve the following for $y$: 
+
+a) $\ln(y+1) + \ln(y-1) = 2x + \ln x$ 
+$\ln(y+1) + \ln(y-1) =\ln{((y+1)(y-1))}$
+$\ln{(y^2-1)}=2x+\ln x$
+$\ln{(y^2-1)-\ln{x}}=2x$
+$=\ln{\frac{(y-1)}{x}}=2x$
+=$e^{\ln{\dfrac{(y-1)}{x}}= e^{2x}}$
+e^ln x = x 
+so ${\dfrac{(y-1)}{x}}= e^{2x}$
+$(y-1)= xe^{2x}$ 
+$y=xe^{2x}+1$
+
+b) $\log(y+1) = x^2 + \log(y-1)$ 
+log(y+1)-log(y-1)=x^2
+$log(\frac{y+1}{y-1})= x^2$
+removing log on both sides:
+$10^{(x^2)}= \frac{y+1}{y-1}$
+by substituing k =10^x^2
+k(y-1)=y+1
+y = k(y-1)-1
+y= ky-k-1
+
+
+Linear and quadratic approximation:
+
+**2A-1** Find the linearization of $\sqrt{a + bx}$ at $0$, by using (2), and also by using the basic approximation formulas. (Here $a$ and $b$ are constants; assume $a > 0$. Do not confuse this $a$ with the one in (2), which has the value 0.)
+$$\begin{aligned}
+f(x)=(a+bx)^{1/2}\\
+f'(x)=\frac{1}{2}(a+bx)^{-1/2}.b\\
+\text{eqn of line }=f(0)+f'(0)=(a)^{1/2}+\frac{1}{2}(a)^{-1/2}.b
+\end{aligned}$$
+
+**2A-6** Find a quadratic approximation to $\tan \theta$, for $\theta \approx 0$.
+
+
+
+**2A-12** Give the indicated type of approximation at the point indicated. (This is to be done after studying the log and exponential functions.)
+
+a) $\dfrac{e^x}{1 - x}= \dfrac{1}{(1-x)}.e^x=({1-x})^{-1}.e^x$ (quadratic, $x \approx 0$)
+quadratic approximation of terms:
+for $e^x=1+x+\dfrac{x^2}{2}$
+for $(1-x)^{-1}$ ---> $(1-0)^{-1}-1(1-x)^{-2}.x+\dfrac{2(1-x)^{-3}}{2}.x^2$
+using multiplication method:
+the quadratic approximation of the equation :
+($1+x+\dfrac{x^2}{2})((1-0)^{-1}-1(1-0)^{-2}.x+\dfrac{2(1-0)^{-3}}{2}.x^2$)
+= $(1+x+\dfrac{x^2}{2})(1-x+x^2)$
+
+=$1+x^3+\dfrac{x^2}{2}-\dfrac{x^3}2+\dfrac{x^4}{2}$
+
+= $\dfrac{2+x^3+x^2+x^4}{2}$
+dropping terms with degree higher than 2 :
+we et:
+$=\dfrac{2+x^2}{2}$
+
+
+c) $e^{-x^2}$ (quadratic, $x \approx 0$)  
+quadratic approximation = f(0)+f'(0)x+f''(0)x^2
+f(0)=1
+f'(0)=$e^{-0^2}.-2(0)$
+f"(x)=$(e^{-x^2}.-2)+(-2x.e^{-x^2})$
+f"(x)=(-2)+(0)
+quadratic approximation = $1-x^2$
+
+a) $\sin(2x)$, near $0$
+f(x)=sin(2x)
+f(0)=sin(0)=0
+f'(x)=2cos(2x)
+f'(0)=2cos(0)=2
+f''(x)=-2sin(2x)
+f"(x)=-2sin(0) =0
+quadratic approximation eqn: 0+2x+0 = 2x
+
+
+
+
