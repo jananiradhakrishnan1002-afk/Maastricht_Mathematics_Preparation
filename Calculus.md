@@ -9,6 +9,8 @@ $$
 Slope at one point: also known as instant slope: is the derivative of the funcction
 
 $$ \frac{dy}{dx}$$
+
+                            DERIVATIVES
 ***Practice problems from Prof. Gilbert Strang's Lecture - Big Picture Derivatives***
 1. For $y = 2x^3$, what is the average slope = $\frac{\Delta y}{\Delta x}$ from $x = 1$ to $x = 2$?
 2. What is the instant slope of $y = 2x^3$ at $x = 1$?
@@ -89,8 +91,7 @@ slope:    $$
 $$
 
 
-
-**Practice problems from Prof. Gilbert Strang's Lecture - Max and Min and Second Derivative**
+                        **Max and Min and Second Derivative**
 
 **1  Which $x^*$ gives the minimum of $y(x) = x^2 + 2x$? Solve $\dfrac{dy}{dx} = 0$**
 minimum of the parabola is at its vertex.
@@ -150,8 +151,7 @@ At minimum point the point is neither decreasing , nor increasing. So, its horiz
 
 Likewise, the second derivative tells us how the slope is changing, if its positive, the slope is changing in an upward/positive direction otherwise in a downward direction 
 
-
-**Practice problems from Prof. Gilbert Strang's Lecture - Exponential Functions**
+                        **Exponential Functions**
 **1 What is the derivative of $\dfrac{x^{10}}{10!}$? = $\frac{x^{10}}{1}.\frac{1}{10!}$**
 derivative: $$10x^{9}.\frac{1}{10!}+x^{10}.0=\frac{10x^{9}}{10!}=\frac{x^9}{9!}$$
 
@@ -213,7 +213,7 @@ $$\frac{dy}{dx}e^0 \text{ approaches }1$$
 
 
 
-**Practice problems from Prof. Gilbert Strang's Lecture - Big Picture: Integrals**
+                                **Integrals**
 1 What functions $y(t)$ have the constant derivative $s(t) = 7$?
 $$\text{anti derivative of  } s(t) = 7 =y(t) = 7t+C$$
 2 What is the area from $0$ to $t$ under the graph of $s(t) = 7$?
@@ -242,12 +242,12 @@ y(0)=1-1 = 0
 9 Notice $y_0$ in $(y_1 - y_0) + (y_2 - y_1) + (y_3 - y_2) =-y_0+y_3$  The sum of $\Delta y = \dfrac{\Delta y}{\Delta t} \Delta t$ becomes the integral of $\dfrac{dy}{dt} \, dt$ The area under $s(t)$ from $0$ to $t$ becomes $y(t) - y(0)$.
 
 
-**18.01SC - Single Variable Calculus - Prof. David Jerison https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/1.-differentiation/**
- 
 
-PROBLEM SET 1: 
 
-Slope and Derivative
+             **18.01SC - Single Variable Calculus - Prof. David Jerison
+
+
+                              **Slope and Derivative**
 
 a) Use the difference quotient definition of derivative to calculate the rate of change of the area of a disk with respect to its radius. (Your answer should be the circumference of the disk.)
 
@@ -277,6 +277,9 @@ b) $f(x) = 2x^2 + 5x + 4$ at $x = a$
 $f'(x)=4x+5, at x =a , f'(a)=4(a)+5$
 
 ---
+
+
+                                 LIMITS & CONTINUITY
 **1D-1** Calculate the following limits if they exist. If they do not exist, then indicate whether they are $+\infty$, $-\infty$ or undefined.
 
 a) $\displaystyle\lim_{x \to 0} \dfrac{4}{x - 1}$  
@@ -428,7 +431,7 @@ y = k(y-1)-1
 y= ky-k-1
 
 
-Linear and quadratic approximation:
+                          Linear and quadratic approximation
 
 **2A-1** Find the linearization of $\sqrt{a + bx}$ at $0$, by using (2), and also by using the basic approximation formulas. (Here $a$ and $b$ are constants; assume $a > 0$. Do not confuse this $a$ with the one in (2), which has the value 0.)
 $$\begin{aligned}
@@ -477,6 +480,81 @@ f''(x)=-2sin(2x)
 f"(x)=-2sin(0) =0
 quadratic approximation eqn: 0+2x+0 = 2x
 
+                            OPTIMIZATION PROBLEMS
+
+**2C-1** Cut four identical squares out of the corners of a 12 by 12 inch piece of cardboard and fold the sides so as to make a box without a top. Find the size of the corner square that maximizes the volume of the box.
+
+volume of the box after cutting out squares out of the corner. of size x*x
+volume of a cube/ cuboid: length.*width *height
+height = x
+length and width are the same = 12-2x
+so the volume of the cube is of the equation: (x)(12-2x)(12-2x) = x(12-2x)^2
+$x(12^2+2x^2-2(12)(2x))$
+$=x(144+4x^2-48x) = 144x+4x^3-48x^2= 4x^3-48x^2+144x$
+the critical points are:
+$4x^3-48x^2+144x=0$
+$4x(x^2-12x+36)=0$
+$4x(x^2-6x-6x+36)=0$
+$4x(x(x-6)-6(x-6)=0$
+$4x(x-6)^2=0$
+x= 6 or x = 0
+
+**COMMENT: THIS QUESTION IS TO BE RE DONE** 
+
+**2C-2** You are asked to design a rectangular barnyard enclosing 20,000 square feet with fencing on three sides and the wall of a long barn on the fourth. Find the shortest length of fence needed.
+
+the area of a rectangular fence would be l*b.
+the area = lb = 20000 
+l = 20000/b
+the cost of total fencing would be l+2b  = c( assuming the wall is the bigger side)
+
+substituting l: $20000b^{-1}+2b$ = c
+derivative: $-20000b^{-2}+2=c$ 
+setting it to 0:
+$\dfrac{-20000}{b^2}+2=0$
+$-20000+2b^2=0$
+$2b^2=20000$
+$b^2=10000$
+$b=+/-\sqrt{10000}=100$
+b cannnot be negative, so  b = 100
+at b =100, l = 20000/100
+l= 200
+the total fencing required = 200 +100+100 = 400
+
+**2C-3** What is the largest value of the product $xy$, if $x$ and $y$ are related by $x + 2y = a$, where $a$ is a fixed positive constant?
+given x+2y = a 
+x = a-2y
+$xy = (a-2y)y$ = $ay-2y^2$
+derivative:
+$a-4y =0$
+$-4y= -a$
+$4y = a$
+$y = a/4$
+$xy=a\dfrac{a}{4}-2(\dfrac{a}{4})^2$
+$xy =\dfrac{a^2}{4}-2(\dfrac{a^2}{16})$
+$xy=\dfrac{a^2}{4}-(\dfrac{a^2}{8}) = \dfrac{2a^2-a^2}{8}=\dfrac{a^2}{8}$
 
 
+2C-7** Find the dimensions of the rectangle of largest area that can be inscribed in a semicircle of radius $r$.
+    
+ ![198](Maastricht_Mathematics_Preparation/Attachments/Pasted%20image%2020260628194748.png)
 
+for rectangle inscribed in a semi circle, we can formulate that :
+$r=\sqrt{x^2+y^2}$ 
+$x^2+y^2 = r^2$
+$x^2= r^2-y^2$
+$x=\sqrt{r^2-y^2}$
+area of rectangle = 2x*y
+substituting X value -> 
+$2\sqrt{r^2-y^2}.y$
+$2y.(r^2-y^2)^{\frac{1}{2}}$
+differentiating this equation to find the maxima and minima
+$-2y^2(r^2-y^2)+2*\sqrt{(r^2-y^2)}$
+setting it to 0:
+=$-2y^2(r^2-y^2)+2*\sqrt{(r^2-y^2)}$ = 0
+=$-y^2(r^2-y^2)=-\sqrt{(r^2-y^2)}$
+=$-y^2=-\frac{\sqrt{(r^2-y^2)}}{r^2-y^2}$
+$y^2=\frac{1}{\sqrt{r^2-y^2}}$
+$y = +/-\frac{1}{\sqrt{r^2-y^2}}$
+
+{this answer needs to be re worked}
